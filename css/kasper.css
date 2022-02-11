@@ -1,7 +1,7 @@
 /* Start Variables */
 :root {
   --main-color: #19c8fa;
-  --transparent-color: rgba(25, 201, 250, .6);
+  --transparent-color: rgba(25, 201, 250, 0.6);
 }
 /* End Variables */
 /* Start Global Rules */
@@ -46,6 +46,48 @@ ul {
   }
 }
 /* End Global Rules */
+
+/* Start Components */
+.main-heading {
+  text-align: center;
+}
+.main-heading h2 {
+  font-weight: normal;
+  font-size: 40px;
+  position: relative;
+  margin: 70px auto 70px;
+  text-transform: uppercase;
+}
+.main-heading h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 120px;
+  background-color: #333;
+  bottom: -30px;
+}
+.main-heading h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  bottom: -38px;
+  background-color: white;
+}
+.main-heading p {
+  width: 550px;
+  margin: 70px auto 100px;
+  max-width: 100%;
+  line-height: 2;
+  color: #777;
+}
+/* End Components */
 
 /* Start Header */
 header {
@@ -115,6 +157,7 @@ header nav ul li a {
   transition: 0.3s;
   position: relative;
   z-index: 2;
+  color: white;
 }
 header nav ul li a.active,
 header nav ul li a:hover {
@@ -126,14 +169,15 @@ header nav .form {
   height: 30px;
   position: relative;
   margin-left: 30px;
-  border-left: 1px solid black;
+  border-left: 1px solid white;
 }
 header nav .form i {
   position: absolute;
-  font-size: 20px;
+  font-size: 18px;
   top: 50%;
   transform: translateY(-50%);
   right: 0;
+  color: white;
 }
 /* End Header */
 /* Start Landing */
@@ -198,7 +242,7 @@ header nav .form i {
   left: 30px;
 }
 .landing .fa-angle-right {
-  right: 30px
+  right: 30px;
 }
 .landing .bullets {
   position: absolute;
@@ -212,7 +256,7 @@ header nav .form i {
   height: 20px;
   border: 1px solid white;
   border-radius: 50%;
-  margin-right:10px;
+  margin-right: 10px;
 }
 .landing .bullets li.active {
   background-color: var(--main-color);
