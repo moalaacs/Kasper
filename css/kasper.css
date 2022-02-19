@@ -145,7 +145,7 @@ header nav ul {
     top: 100%;
     width: 100%;
     left: 0;
-    background-color:rgba(25, 201, 250, 0.3);
+    background-color: rgba(25, 201, 250, 0.3);
   }
   header nav ul li a {
     padding: 15px !important;
@@ -404,6 +404,11 @@ header nav .form i {
     flex-basis: 50%;
   }
 }
+@media (min-width: 991px) {
+  .portfolio .images-container .box {
+    flex-basis: 33.3%;
+  }
+}
 @media (min-width: 1199px) {
   .portfolio .images-container .box {
     flex-basis: 25%;
@@ -424,7 +429,7 @@ header nav .form i {
 }
 .portfolio .images-container .box .caption h4 {
   font-weight: normal;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 .portfolio .images-container .box .caption p {
   color: var(--main-color);
@@ -440,3 +445,47 @@ header nav .form i {
   margin: 30px auto;
 }
 /* End Portfolio */
+/* Start Video */
+.video {
+  position: relative;
+}
+.video::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 10%);
+}
+.video video {
+  width: 100%;
+}
+.video .text {
+  width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  background-color: var(--transparent-color);
+  color: white;
+  text-align: center;
+}
+.video .text h2 {
+ margin: 0 0 30px;
+ text-transform: uppercase;
+ font-weight: normal;
+ font-size: 30px;
+}
+.video .text p {
+  margin-bottom: 30px;
+}
+.video .text button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-transform: uppercase;
+}
+/* End Video */
