@@ -607,8 +607,7 @@ header nav .form i {
   margin-bottom: 30px;
 }
 .our-skills .testimonials .content img {
-  width: 100px;
-  margin: auto 50px 50px;
+  margin: 0 50px 50px;
 }
 @media (max-width: 767px) {
   .our-skills .testimonials .content {
